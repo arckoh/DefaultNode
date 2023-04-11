@@ -81,7 +81,7 @@ module.exports = app;
 Consign permet de chargé automatiquement les appels de models, routes, schema. conifigs, controllers, object maps... sans avoir a faire de déclaration de variable en superflue :godmode: `var routeTest = require('./app/routes/home')(app); ==> consign().include('app/routes).into(app)`;
 
 Sur server.js
-
+```
 const express = require('express');
 var consign = require('consign');
 
@@ -98,10 +98,10 @@ consign()
     .into(app);
 
 module.exports = app;
-Base de Données
-Mongodb(mongoose) seedling
-Bibliotheque qui créee une connection entre Mongodb et Javascript npm i mongoose -s
-
+```
+## Base de Données
+> Mongodb(mongoose) seedling Bibliotheque qui créee une connection entre Mongodb et Javascript npm i mongoose -s
+```
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -125,4 +125,5 @@ db.once("open", function () {
 });
 
 module.exports = app;
-Models
+```
+## Models
