@@ -1,4 +1,4 @@
-NodeJS
+# NodeJS
 Learning
 
 Installer NodeJS => via snapcraft pour la derniere version ou directement via la distro linux :neckbeard:
@@ -7,7 +7,7 @@ Lorsque NodeJS est installé npm vient avec.
 
 La premiere étape pour crée un projet faire un dossier puis dedans faire un npm init
 
-npm
+## npm
 Le gestionnaire de paquets
 
 Il permet surtout d'installer des modules ou des packets dans notre projets ou sur notre pc/server
@@ -16,7 +16,7 @@ npm install express --save pour sauvegarder express par exemple uniquement sur n
 
 npm install express --global ici par contre express sera installer sur notre machine
 
-express
+## express
 Framework
 
 Express intégre toute la structure front dans notre projet en NodeJS (les routes entre autres)
@@ -28,19 +28,19 @@ Engine de views
 
 EJS va permettre de crée des views avec le language HTML avec le Javascript intégré de dedans app.set('view engine', 'ejs'); et surtout durant le pointage sur get faire un retour sur le dossier/sousDossier de la view res.render("section/tech");
 
-CommonJS
+## CommonJS
 Construction
 
 Permet de structurer un appel de fonction de maniére simplifié
 
 Exemple: mod_test.js
-
+```
 module.exports = function(){
     var msg = "Ce module contient une string"; 
     return msg;
 }
 app.js
-
+``
 var express = require('express');
 var msg = require('./mod_test');
 [...]
