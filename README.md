@@ -76,10 +76,9 @@ module.exports = app;
 ```
 ### Consign
 `npm i consign`
+> Autload de script
 
-Autload de script
-
-Consign permet de chargé automatiquement les appels de models, routes, schema. conifigs, controllers, object maps... sans avoir a faire de déclaration de variable en superflue :godmode: var routeTest = require('./app/routes/home')(app); ==> consign().include('app/routes).into(app);
+Consign permet de chargé automatiquement les appels de models, routes, schema. conifigs, controllers, object maps... sans avoir a faire de déclaration de variable en superflue :godmode: `var routeTest = require('./app/routes/home')(app); ==> consign().include('app/routes).into(app)`;
 
 Sur server.js
 
