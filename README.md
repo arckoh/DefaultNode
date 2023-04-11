@@ -59,7 +59,7 @@ var app = express();
 app.set('view engine', 'ejs'); 
 
 module.exports = app;
-```
+
 > Arboressance
 ```
 ├──app
@@ -73,8 +73,9 @@ module.exports = app;
 |   |   ├──index.ejs
 |   |   ├──bar.ejs
 |   |   ├──.ejs
-Consign
-npm i consign
+```
+### Consign
+`npm i consign`
 
 Autload de script
 
