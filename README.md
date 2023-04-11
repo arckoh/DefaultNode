@@ -20,12 +20,12 @@ npm install express --global ici par contre express sera installer sur notre mac
 > Framework
 
 Express intégre toute la structure front dans notre projet en NodeJS (les routes entre autres)
-
+```
 var express = require('express');
 app = express();
 EJS
 Engine de views
-
+```
 EJS va permettre de crée des views avec le language HTML avec le Javascript intégré de dedans app.set('view engine', 'ejs'); et surtout durant le pointage sur get faire un retour sur le dossier/sousDossier de la view res.render("section/tech");
 
 ## CommonJS
@@ -39,8 +39,9 @@ module.exports = function(){
     var msg = "Ce module contient une string"; 
     return msg;
 }
+```
 app.js
-``
+```
 var express = require('express');
 var msg = require('./mod_test');
 [...]
@@ -48,18 +49,19 @@ var msg = require('./mod_test');
 app.listen(3000, function(){
     console.log(msg());
 });
-Creation Structure
-Config
-server.js
+```
+### Creation Structure
+#### Config
+> server.js
 
 var express = require('express');
 var app = express();
 app.set('view engine', 'ejs'); 
 
 module.exports = app;
-
-Arboressance
-
+```
+> Arboressance
+```
 ├──app
 |   ├──config
 |   |   ├──server.js
